@@ -32,7 +32,7 @@ body {
   position: relative;
 }
 
-/* Logo Styles */
+/* Logo Styles */ 
 .logo a {
     font-size: 3rem;
     font-weight: bold;
@@ -420,7 +420,7 @@ body {
 
 .social-icons a:hover {
     color: #0077b6;
-}
+}   
 
 /*----- Product Row -----*/
 
@@ -651,4 +651,5 @@ td:last-child{
 th:last-child{
   text-align: right;
 }
+
 
