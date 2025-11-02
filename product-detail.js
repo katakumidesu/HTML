@@ -235,7 +235,7 @@ shuffled.forEach(prod => {
     div.innerHTML = `
         <img src="${prod.img}" alt="${prod.name}">
         <h4>${prod.name}</h4>
-        <div class="rating">${getStars(prod.rating)}</div>
+        <div class="rating">${getStars(prod.rating)}</div>  
         <p><strong>${prod.price}</strong></p>
         <a href="product-detail.html?name=${encodeURIComponent(prod.name)}">
             <button class="purchase-btn">Purchase</button>
