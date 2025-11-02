@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +16,10 @@
     lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
 
-
+  
+   
 
     <style>
         img {
@@ -60,42 +63,17 @@
 
 
     <!-------- single product details -------->
-
-<div class="product-container single-product">
-    <div class="product-image">
-        <img src="images/scratchcat.jpg" alt="Cat Scratch Post">
-    </div>
-
-    <div class="product-details">
-        <p>Home / Cat Accessories</p>
-        <h1>Cat Scratch Post</h1>
-        <h4>$100.00</h4>
-        <input type="number" value="1">
-        <a href="" class="purchase-btn-2"> Add To Cart</a>
-        
-        <h3> Product Details <i class="fa fa-indent"></i></h3>
-        <br>
-        <p>
-            Keep your kitty active and happy! <br>
-Our Cat Scratch Post features a stable base, durable sisal rope, and a playful hanging toy. Perfect for scratching, stretching, and playtime fun!
-        </p>
-        
-    </div>
-</div>
+<div id="product-details"></div>
+    <section class="related-section">
 
 <!-----title----->
-  <section class="related-section">
-  <div class="row-4">
-    <h2>Related Products</h2>
-  </div>
-
-  <div id="related-container" class="shop-container">
-    <!-- Related products will be inserted here by JS -->
-  </div>
+ 
+  <h2>Related Products</h2>
+  <div id="related-container" 
+    class="shop-container">
+    </div>
 </section>
-
-
-    
+   
 <!-----footer----->
 <footer class="footer">
     <div class="footer-logo">
@@ -150,7 +128,9 @@ Our Cat Scratch Post features a stable base, durable sisal rope, and a playful h
         </div>
     </div>
 </footer>
-<script src="shuffle.js"></script>
+
+<script src="product-detail.js"></script>
+
 </body>
 
 </html>
