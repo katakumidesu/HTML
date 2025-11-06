@@ -228,14 +228,19 @@ const filteredProducts = products.filter(p => p.name !== productName);
 const relatedContainer = document.getElementById("related-container");
 const shuffled = shuffle([...filteredProducts]).slice(0, 4);
 
-// ⭐ Keep stars for related products only
+// ⭐ Display related products with clickable product boxes
+relatedContainer.innerHTML = "";
 shuffled.forEach(prod => {
     const div = document.createElement("div");
-    div.classList.add("related-item");
+    div.classList.add("cat2"); // same style as your example
     div.innerHTML = `
-        <img src="${prod.img}" alt="${prod.name}">
+        <a href="product-detail.html?name=${encodeURIComponent(prod.name)}">
+            <img src="${prod.img}" alt="${prod.name}">
+        </a>
         <h4>${prod.name}</h4>
-        <div class="rating">${getStars(prod.rating)}</div>  
+        <div class="rating">
+            ${getStars(prod.rating)}
+        </div>
         <p><strong>${prod.price}</strong></p>
         <a href="product-detail.html?name=${encodeURIComponent(prod.name)}">
             <button class="purchase-btn">Purchase</button>
@@ -243,4 +248,3 @@ shuffled.forEach(prod => {
     `;
     relatedContainer.appendChild(div);
 });
-    
